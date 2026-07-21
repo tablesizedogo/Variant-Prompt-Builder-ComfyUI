@@ -1,0 +1,18 @@
+# This file is only needed if you choose to publish the node to the
+# official Comfy Registry (https://registry.comfy.org). It is NOT required
+# for manual installation - see the main README for that.
+
+[project]
+name = "comfyui-variant-prompt-builder"
+description = "Build a batch of image-generation prompts from one base prompt plus a numbered list of variants, with matched or unique seeding per variant."
+version = "1.1.0"
+license = { file = "../../LICENSE" }
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/tablesizedogo/Variant-Prompt-Builder-ComfyUI"
+
+[tool.comfy]
+PublisherId = "tablesizedogo"
+DisplayName = "Variant Prompt Builder"
+Icon = ""

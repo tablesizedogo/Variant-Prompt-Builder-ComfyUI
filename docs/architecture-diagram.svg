@@ -1,0 +1,122 @@
+<svg viewBox="0 0 1560 470" width="1560" height="470" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arrow-gray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#94a3b8"/>
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#9333ea"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1560" height="470" fill="#ffffff"/>
+
+  <text x="780" y="35" text-anchor="middle" font-size="22" font-weight="700" fill="#0f172a">How Variant Prompt Builder works</text>
+
+  <!-- General text input -->
+  <rect x="20" y="70" width="280" height="100" rx="10" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/>
+  <circle cx="20" cy="70" r="13" fill="#3b82f6"/>
+  <text x="20" y="74" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">1</text>
+  <text x="35" y="98" font-size="13" font-weight="700" letter-spacing="0.5" fill="#1e3a8a">GENERAL TEXT</text>
+  <text x="35" y="128" font-size="13" font-family="Consolas, monospace" fill="#1e40af">"a cute image of</text>
+  <text x="35" y="148" font-size="13" font-family="Consolas, monospace" fill="#1e40af">a cat"</text>
+
+  <!-- Variant text input -->
+  <rect x="20" y="250" width="280" height="150" rx="10" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/>
+  <circle cx="20" cy="250" r="13" fill="#3b82f6"/>
+  <text x="20" y="254" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">1</text>
+  <text x="35" y="278" font-size="13" font-weight="700" letter-spacing="0.5" fill="#1e3a8a">VARIANT TEXT</text>
+  <text x="35" y="304" font-size="13" font-family="Consolas, monospace" fill="#1e40af">1. black cat</text>
+  <text x="35" y="328" font-size="13" font-family="Consolas, monospace" fill="#1e40af">2. white cat</text>
+  <text x="35" y="352" font-size="13" font-family="Consolas, monospace" fill="#1e40af">3. big cat</text>
+  <text x="35" y="376" font-size="13" font-family="Consolas, monospace" fill="#1e40af">4. orange cat</text>
+
+  <!-- Arrows into builder -->
+  <line x1="300" y1="120" x2="352" y2="180" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow-gray)"/>
+  <line x1="300" y1="325" x2="352" y2="270" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow-gray)"/>
+
+  <!-- Builder node -->
+  <rect x="360" y="125" width="260" height="200" rx="10" fill="#f0fdfa" stroke="#14b8a6" stroke-width="2"/>
+  <circle cx="360" cy="125" r="13" fill="#14b8a6"/>
+  <text x="360" y="129" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">2</text>
+  <text x="490" y="163" text-anchor="middle" font-size="15" font-weight="700" fill="#0f766e">VARIANT PROMPT</text>
+  <text x="490" y="182" text-anchor="middle" font-size="15" font-weight="700" fill="#0f766e">BUILDER</text>
+  <text x="490" y="212" text-anchor="middle" font-size="12" fill="#115e59">combines general + variant</text>
+  <text x="490" y="230" text-anchor="middle" font-size="12" fill="#115e59">text into N prompts</text>
+  <text x="490" y="256" text-anchor="middle" font-size="12" fill="#115e59">assigns each a seed —</text>
+  <text x="490" y="274" text-anchor="middle" font-size="12" fill="#115e59">shared or unique (your choice)</text>
+  <text x="490" y="304" text-anchor="middle" font-size="11" font-style="italic" fill="#0d9488">N = number of variants</text>
+
+  <!-- Arrow to list -->
+  <line x1="620" y1="225" x2="674" y2="225" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow-gray)"/>
+
+  <!-- Prompt + seed list -->
+  <rect x="680" y="75" width="340" height="300" rx="10" fill="#fefce8" stroke="#eab308" stroke-width="2"/>
+  <circle cx="680" cy="75" r="13" fill="#eab308"/>
+  <text x="680" y="79" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">3</text>
+  <text x="850" y="107" text-anchor="middle" font-size="14" font-weight="700" fill="#854d0e">N PROMPTS + N SEEDS</text>
+  <text x="850" y="126" text-anchor="middle" font-size="11" fill="#a16207">(N = 4 in this example)</text>
+  <text x="705" y="152" font-size="11" font-weight="700" letter-spacing="0.5" fill="#713f12">PROMPT</text>
+  <text x="1000" y="152" text-anchor="end" font-size="11" font-weight="700" letter-spacing="0.5" fill="#713f12">SEED</text>
+  <line x1="700" y1="162" x2="1000" y2="162" stroke="#eab308" stroke-width="1"/>
+  <text x="705" y="194" font-size="12" font-family="Consolas, monospace" fill="#422006">…, black cat</text>
+  <text x="1000" y="194" text-anchor="end" font-size="12" font-family="Consolas, monospace" fill="#422006">100</text>
+  <text x="705" y="229" font-size="12" font-family="Consolas, monospace" fill="#422006">…, white cat</text>
+  <text x="1000" y="229" text-anchor="end" font-size="12" font-family="Consolas, monospace" fill="#422006">100</text>
+  <text x="705" y="264" font-size="12" font-family="Consolas, monospace" fill="#422006">…, big cat</text>
+  <text x="1000" y="264" text-anchor="end" font-size="12" font-family="Consolas, monospace" fill="#422006">100</text>
+  <text x="705" y="299" font-size="12" font-family="Consolas, monospace" fill="#422006">…, orange cat</text>
+  <text x="1000" y="299" text-anchor="end" font-size="12" font-family="Consolas, monospace" fill="#422006">100</text>
+  <text x="850" y="345" text-anchor="middle" font-size="10" font-style="italic" fill="#a16207">(same-seed mode shown here)</text>
+
+  <!-- Arrow to loop -->
+  <line x1="1020" y1="225" x2="1074" y2="225" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow-gray)"/>
+
+  <!-- Sampler loop -->
+  <rect x="1080" y="125" width="200" height="200" rx="10" fill="#faf5ff" stroke="#a855f7" stroke-width="2"/>
+  <circle cx="1080" cy="125" r="13" fill="#a855f7"/>
+  <text x="1080" y="129" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">4</text>
+  <path d="M1180,160 a30,30 0 1,1 -29,29" fill="none" stroke="#9333ea" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow-purple)"/>
+  <text x="1180" y="248" text-anchor="middle" font-size="13" font-weight="700" fill="#6b21a8">SAMPLER</text>
+  <text x="1180" y="268" text-anchor="middle" font-size="11" fill="#7e22ce">runs once per item</text>
+  <text x="1180" y="285" text-anchor="middle" font-size="10" fill="#7e22ce">(ComfyUI list execution)</text>
+
+  <!-- Arrow to images -->
+  <line x1="1280" y1="225" x2="1334" y2="225" stroke="#94a3b8" stroke-width="2.5" marker-end="url(#arrow-gray)"/>
+
+  <!-- Images output -->
+  <rect x="1340" y="75" width="200" height="300" rx="10" fill="#f0fdf4" stroke="#22c55e" stroke-width="2"/>
+  <circle cx="1340" cy="75" r="13" fill="#22c55e"/>
+  <text x="1340" y="79" text-anchor="middle" font-size="12" font-weight="700" fill="#ffffff">5</text>
+  <text x="1440" y="107" text-anchor="middle" font-size="14" font-weight="700" fill="#14532d">4 IMAGES</text>
+  <text x="1440" y="125" text-anchor="middle" font-size="10" fill="#166534">generated automatically</text>
+
+  <g transform="translate(1360,179)">
+    <rect x="0" y="0" width="28" height="22" rx="3" fill="#ffffff" stroke="#22c55e" stroke-width="1.5"/>
+    <circle cx="7" cy="7" r="2.5" fill="#22c55e"/>
+    <path d="M2,19 L10,10 L15,15 L20,8 L26,19 Z" fill="#bbf7d0"/>
+  </g>
+  <text x="1400" y="196" font-size="11" fill="#14532d">black cat</text>
+
+  <g transform="translate(1360,214)">
+    <rect x="0" y="0" width="28" height="22" rx="3" fill="#ffffff" stroke="#22c55e" stroke-width="1.5"/>
+    <circle cx="7" cy="7" r="2.5" fill="#22c55e"/>
+    <path d="M2,19 L10,10 L15,15 L20,8 L26,19 Z" fill="#bbf7d0"/>
+  </g>
+  <text x="1400" y="231" font-size="11" fill="#14532d">white cat</text>
+
+  <g transform="translate(1360,249)">
+    <rect x="0" y="0" width="28" height="22" rx="3" fill="#ffffff" stroke="#22c55e" stroke-width="1.5"/>
+    <circle cx="7" cy="7" r="2.5" fill="#22c55e"/>
+    <path d="M2,19 L10,10 L15,15 L20,8 L26,19 Z" fill="#bbf7d0"/>
+  </g>
+  <text x="1400" y="266" font-size="11" fill="#14532d">big cat</text>
+
+  <g transform="translate(1360,284)">
+    <rect x="0" y="0" width="28" height="22" rx="3" fill="#ffffff" stroke="#22c55e" stroke-width="1.5"/>
+    <circle cx="7" cy="7" r="2.5" fill="#22c55e"/>
+    <path d="M2,19 L10,10 L15,15 L20,8 L26,19 Z" fill="#bbf7d0"/>
+  </g>
+  <text x="1400" y="301" font-size="11" fill="#14532d">orange cat</text>
+
+  <text x="780" y="440" text-anchor="middle" font-size="13" font-style="italic" fill="#475569">One click generates every variant — no manual re-queuing, no retyping the prompt.</text>
+</svg>
