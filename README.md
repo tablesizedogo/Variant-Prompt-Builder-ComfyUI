@@ -156,4 +156,4 @@ Released under the [MIT License](LICENSE).
 
 ## Author
 
-**tablesizedogo** — [your.email@example.com](mailto:tablesizedogo@mail.ru) · [github.com/YOUR_USERNAME](https://github.com/tablesizedogo)
+**tablesizedogo** — [tablesizedogo@mail.ru](mailto:tablesizedogo@mail.ru) · [github.com/tablesizedogo](https://github.com/tablesizedogo)
